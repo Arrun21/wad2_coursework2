@@ -345,5 +345,21 @@ table {
       color:black;
   }
 
-  
- 
+  #dishInput{
+    height: 46px;
+    border-radius: 48px;
+    border: 0.5px solid lightgrey;
+    width: 30%;
+    padding-left:35px;
+    font-size: 1rem;
+    
+  }
+ #search{
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 0.5em);
+ }
+
+ .searchbar {
+    position: relative;
+  }
