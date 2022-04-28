@@ -1,0 +1,63 @@
+<html>
+<head>
+{{>header}}
+</head>
+<body>
+ <br>
+ <br>
+ <br>
+<h1>{{title}}</h1>
+<div class="picmenu">
+        <a href="/"><img src="img/logo1.JPG" alt="UmaiNihon" width="160" height="90"></a>
+</div>
+        <div class="navbar">
+        <ul>
+            <li><a href="/">About Us</a></li>
+            <li><a href="lunch">Lunch Menu</a></li>
+            <li><a class="active" a href="main">Main Menu</a></li>
+            <li><a href="contact">Contact Us</a></li>
+          </ul>
+        </div>
+<div class ="menuDiv">
+{{#main.chefSpecial}}
+<div>
+<h4>{{name}}</h4>
+<p>
+{{description}}
+</p>
+<p>
+{{ingredients}}
+</p>
+<p>
+{{allergy}}
+</p>
+<p>
+{{price}}
+</p>
+</div>
+{{/main.chefSpecial}}
+</div>
+<div class ="menuDiv">
+{{#main.meals}}
+<div>
+<h4>{{name}}</h4>
+<p>
+{{description}}
+</p>
+<p>
+{{ingredients}}
+</p>
+<p>
+{{allergy}}
+</p>
+<p>
+{{price}}
+</p>
+</div>
+{{/main.meals}}
+</div>
+{{^main}}
+No entries yet.
+{{/main}}
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body class="container">
+<h1>New Dish</h1>
+<div class="picmenu">
+     <a href="/">   <img src="img/logo1.JPG" alt="UmaiNihon" width="160" height="90"></a>
+</div>
+<div class="navbar">
+        <ul>
+        {{#loggedIn}}
+        <li><a href="staffhome">Home</a></li>
+            <li><a class="active" a href="staffadd">Add</a></li>
+            <li><a href="register">Register</a></li>
+            <li><a href="logout">Log Out</a></li>
+            {{/loggedIn}}
+          </ul>
+        </div>
+<br>
+<br>
+<div class ="formstaffadd">
+<div class ="staffadd">
+    <form method="post" role="form" id="staffaddBox">
+    <div class="dishDiv">
+        <div class="staffform-input">
+            <label  id="staffaddlabel" for="name">New dish</label>
+            <input type="text" class="dish-input" id="name" name="name" placeholder="Enter New dish" required>
+        
+        </div>
+        <div class="staffform-input">
+            <label id="staffaddlabel" for="price">Price</label>
+            <input type="text" class="dish-input" id="price" name="price" placeholder="Enter price" required>
+        </div>
+        </div>
+        <div class="dishDiv2">
+        <div class="staffform-input">
+            <label  id="staffaddlabel" for="type">Type</label>
+            <input type="text" class="dish-input" id="type" name="type" placeholder="Enter type" required>
+        </div>
+        <div class="staffform-input">
+            <label id="staffaddlabel" for="special">Special</label>
+            <input type="checkbox" class="dish-input" id="special" name="special" >
+        </div>
+        <div class="staffform-input">
+            <label id="staffaddlabel" for="hidden">Hidden</label>
+            <input class="star" type="checkbox" id="dish-input" id="hidden" name="hidden"  >
+        </div>
+        </div>
+        <div class="contentDiv">
+            <div class="staffform-input">
+            <label id="staffaddlabel" for="description">Description</label>
+            <textarea class="dish-input" id="description" name="description" placeholder="Enter description here."    required>
+            </textarea>
+            </div>
+            <div class="staffform-input">
+            <label id="staffaddlabel" for="ingredients">Ingredients</label>
+            <textarea class="dish-input" id="ingredients" name="ingredients" placeholder="Enter ingredients here."     required>
+            </textarea>
+            </div>
+            <div class="staffform-input">
+            <label  id="staffaddlabel" for="allergy">Allergy</label>
+            <textarea class="dish-input" id="allergy" name="allergy" placeholder="Enter allergy"    required>
+            </textarea>
+            </div>
+        </div>
+        <br>
+        
+            <input type="submit" value="Add dish" class="staffaddbutton">
+        
+        </div>
+        </div>
+    </form>
+</body>
+</html>

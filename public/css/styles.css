@@ -1,0 +1,347 @@
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.text {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+.pic {
+    position: absolute;
+    left: 1;
+    top: 0;
+}
+
+.picmenu{
+    position: absolute;
+    left: 8;
+    top: 0;
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d5d4cb;
+    width: fit-content;
+    float: right;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #e4e4dc;
+}
+
+.active {
+    background-color: #acb4ac;
+}
+
+.menuDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 15px;
+}
+/*--------------------- register -----------------------------*/
+.formregister{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+.registerAlign {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+
+#registerBox {
+    padding: 2.5em;
+    margin: 1em;
+    border: 0.1em solid #0000;
+    border-radius: 0.2em;
+    background-color: #d5d4cb;
+    text-align: left;
+    justify-content: left;
+    float: left;
+}
+
+#form-label{
+    font-size: 1.3rem;
+}
+
+.register-input{
+   height:40px;
+   font-size:1rem;
+}
+
+#password{
+    padding:10px;
+}
+#confirmpassword{
+    padding:10px;
+}
+#staffemail{
+    padding:10px;
+}
+
+.btn-register{
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #0000;
+    background-color: #f5f5f5;
+}
+/*--------------------- login -----------------------------*/
+.formlogin{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginAlign {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+#loginBox {
+    padding: 2.5em;
+    margin: 1em;
+    border: 0.1em solid #0000;
+    border-radius: 0.2em;
+    background-color: #d5d4cb;
+    text-align: left;
+    justify-content: left;
+    float: left;
+}
+
+.loginform-input{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+#login-label{
+    font-size: 1.3rem;
+}
+
+.login-input{
+    height:40px;
+    font-size:1rem;
+ }
+
+ #loginpassword{
+    padding:10px;
+}
+
+#loginemail{
+    padding:10px;
+}
+
+.loginbutton{
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #0000;
+    background-color: #f5f5f5;
+}
+/*--------------------- staff add -----------------------------*/
+.formstaffadd{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.staffadd {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+#staffaddlabel{
+    font-size: 1.3rem;
+}
+#staffaddBox {
+    padding: 2.5em;
+    margin: 1em;
+    border: 0.1em solid #0000;
+    border-radius: 0.2em;
+    background-color: #d5d4cb;
+    text-align: left;
+    justify-content: left;
+    float: left;
+}
+
+.contentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:17px;
+    gap:3%;
+}
+
+.dishDiv {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr ;
+    padding-bottom: 10px;
+    grid-gap: 10px;
+}
+.dishDiv2 {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-gap: 20px;
+    
+}
+
+
+.staffform-input{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+.staffaddbutton{
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #0000;
+    background-color: #f5f5f5;
+}
+
+.dish-input{
+    height:40px;
+    font-size:1rem;
+}
+
+#dish-input{
+    height:40px;
+    font-size:1rem;
+}
+
+#name{
+    padding:10px;
+    
+}
+
+#price{
+    padding:10px;
+    width: 130px;
+}
+
+#type{
+    padding:10px;
+    text-transform: lowercase;
+}
+
+#special{
+    padding:10px;
+    text-transform: lowercase;
+}
+
+#description{
+    width: 280px;
+    height: 250px;
+    resize: none; 
+}
+
+#ingredients{
+    width: 250px;
+    height: 250px;
+    resize: none; 
+}
+
+#allergy{
+    width: 150px;
+    height: 250px;
+    resize: none; 
+}
+.star {
+    visibility:hidden;
+    font-size:30px;
+    cursor:pointer;
+}
+.star:before {
+   content: "\2606";
+   position: absolute;
+   visibility:visible;
+}
+.star:checked:before {
+   content: "\2605";
+   position: absolute;
+}
+/*--------------------- staff landing -----------------------------*/
+
+#search{
+    font-size:1rem;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+
+  
+ 

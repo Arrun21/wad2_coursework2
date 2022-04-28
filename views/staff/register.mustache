@@ -1,0 +1,46 @@
+<html>
+<head>
+{{>header}}
+</head>
+<body>
+ <br>
+ <br>
+ <br>
+<h1>{{title}}</h1>
+<h1>Register</h1>
+<div class="picmenu">
+       <a href="/"> <img src="img/logo1.JPG" alt="UmaiNihon" width="160" height="90"></a>
+</div>
+<div class="navbar">
+        <ul>
+            <li><a class="active" a href="register">Register</a></li>
+            <li><a href="login">Log In</a></li>
+          </ul>
+        </div>
+<br>
+<br>
+<div class ="formregister">
+<div class ="registerAlign">
+<form method="post" role="/register" id="registerBox">
+        {{user-name-error}}
+        <div class="form-input">
+        <label id="form-label" for="staffemail">New Email</label>
+        <input type="email" class="register-input" id="staffemail" name="staffemail"  placeholder="Enter new email" required>
+        </div>
+        <br>
+    <div class="form-input">
+        <label  id="form-label" for="password">New Password (8 characters minimum)</label>
+        <input type="password" class="register-input" id="password" name="password" placeholder="Enter password" minlength="8" required>
+        </div>
+         <br>
+    <div class="form-input">
+        <label  id="form-label" for="confirmpassword">Confirm Password (8 characters minimum)</label>
+        <input type="password" class="register-input" id="confirmpassword" name="confirmpassword" placeholder="Enter password" minlength="8" required>
+        </div>
+         <br>
+        <input type="submit" value="Register" class="btn-register">
+    </div>
+    </div>
+</form>
+</body>
+</html>

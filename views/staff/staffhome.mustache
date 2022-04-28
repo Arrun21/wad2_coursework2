@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body class="container">
+<h1>Welcome</h1>
+<div class="picmenu">
+        <a href="/"> <img src="img/logo1.JPG" alt="UmaiNihon" width="160" height="90"></a>
+</div>
+<div class="navbar">
+        <ul>
+        {{#loggedIn}}
+            <li><a class="active" a href="staffhome">Home</a></li>
+            <li><a href="staffadd">Add</a></li>
+            <li><a href="register">Register</a></li>
+            <li><a href="logout">Log Out</a></li>
+            {{/loggedIn}}
+          </ul>
+        </div>
+<br>
+<br>
+<input id='dishInput' onkeyup='searchDishes()' type='text'>
+
+<table id ="dishTable">
+{{#entries}}
+<tr>
+<th>{{name}}</th>
+<td>{{description}}</td>
+<td>{{type}}</td>
+</tr>
+{{/entries}}
+</table>
+
+
+<script src="./javascript/searchbar.js"></script>
+
+{{^entries}}
+No entries yet.
+{{/entries}}
+</body>
+</html>
+
