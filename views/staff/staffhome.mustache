@@ -3,6 +3,7 @@
 {{>header}}
 </head>
 <body class="container">
+<script src="https://kit.fontawesome.com/81b06af5ec.js" crossorigin="anonymous"></script>
 <h1>Welcome</h1>
 <div class="picmenu">
         <a href="/"> <img src="img/logo1.JPG" alt="UmaiNihon" width="160" height="90"></a>
@@ -11,7 +12,6 @@
         <ul>
         {{#loggedIn}}
             <li><a class="active" a href="staffhome">Home</a></li>
-            <li><a href="staffadd">Add</a></li>
             <li><a href="register">Register</a></li>
             <li><a href="logout">Log Out</a></li>
             {{/loggedIn}}
@@ -20,7 +20,7 @@
 <br>
 <br>
 <input id='dishInput' onkeyup='searchDishes()' type='text'>
-
+<a href="staffadd"><i class="fa-solid fa-square-plus"></i></a>
 <table id ="dishTable">
 {{#entries}}
 <tr>
