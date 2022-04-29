@@ -336,7 +336,7 @@ li a:hover:not(.active) {
 
 .star {
     visibility: hidden;
-    font-size: 30px;
+    transform: scale(3, 3);
     cursor: pointer;
 }
 
@@ -429,6 +429,6 @@ tr:nth-child(even) {
 
 .map {
     position: absolute;
-    top: 150%;
+    top: 130%;
     left: -160%;
 }
