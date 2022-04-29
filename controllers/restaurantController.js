@@ -11,6 +11,10 @@ exports.landing_page = function (req, res) {
     res.redirect('/about.html');
 }
 
+exports.contact_page = function (req, res) {
+    res.redirect('/contact.html');
+}
+
 exports.register_page = function (req, res) {
     res.render("staff/register");
 };

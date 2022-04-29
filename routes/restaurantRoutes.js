@@ -16,7 +16,7 @@ router.get('/staffadd', authenticate,controller.new_dish);
 router.post('/staffadd', authenticate, controller.post_new_dish);
 router.get("/staffhome", authenticate, controller.staff_homepage);
 router.get("/logout", controller.logout);
-
+router.get("/contact", controller.contact_page);
 
 router.use(function(req, res) {
     res.status(404);
