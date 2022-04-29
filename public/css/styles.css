@@ -19,6 +19,7 @@ h1 {
     position: relative;
     left: 50%;
 }
+
 /*.textbox {
     display:flex;
     justify-content: center;
@@ -38,7 +39,7 @@ h1 {
     top: 0;
 }
 
-.picmenu{
+.picmenu {
     position: absolute;
     left: 8;
     top: 0;
@@ -89,18 +90,21 @@ li a:hover:not(.active) {
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*--------------------- register -----------------------------*/
-.formregister{
+.formregister {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-.form-input{
+
+.form-input {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
+
 }
+
 .registerAlign {
     display: flex;
     justify-content: left;
@@ -119,36 +123,39 @@ li a:hover:not(.active) {
     float: left;
 }
 
-#form-label{
+#form-label {
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.register-input{
-   height:40px;
-   font-size:1rem;
+.register-input {
+    height: 40px;
+    font-size: 1rem;
 }
 
-#password{
-    padding:10px;
-}
-#confirmpassword{
-    padding:10px;
-}
-#staffemail{
-    padding:10px;
+#password {
+    padding: 10px;
 }
 
-.btn-register{
-    padding:10px;
+#confirmpassword {
+    padding: 10px;
+}
+
+#staffemail {
+    padding: 10px;
+}
+
+.btn-register {
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #0000;
     background-color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
+
 /*--------------------- login -----------------------------*/
-.formlogin{
+.formlogin {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -171,41 +178,42 @@ li a:hover:not(.active) {
     float: left;
 }
 
-.loginform-input{
+.loginform-input {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
+
 }
 
-#login-label{
+#login-label {
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.login-input{
-    height:40px;
-    font-size:1rem;
- }
-
- #loginpassword{
-    padding:10px;
+.login-input {
+    height: 40px;
+    font-size: 1rem;
 }
 
-#loginemail{
-    padding:10px;
+#loginpassword {
+    padding: 10px;
 }
 
-.loginbutton{
-    padding:10px;
+#loginemail {
+    padding: 10px;
+}
+
+.loginbutton {
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #0000;
     background-color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
+
 /*--------------------- staff add -----------------------------*/
-.formstaffadd{
+.formstaffadd {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -217,10 +225,11 @@ li a:hover:not(.active) {
     align-items: left;
 }
 
-#staffaddlabel{
+#staffaddlabel {
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #staffaddBox {
     padding: 2.5em;
     margin: 1em;
@@ -236,36 +245,37 @@ li a:hover:not(.active) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0;
-    padding:17px;
-    gap:3%;
+    margin: 0;
+    padding: 17px;
+    gap: 3%;
 }
 
 .dishDiv {
     display: grid;
-    grid-template-columns: 0.3fr 0.3fr ;
+    grid-template-columns: 0.3fr 0.3fr;
     padding-bottom: 10px;
     grid-gap: 10px;
 }
+
 .dishDiv2 {
     display: grid;
-    grid-template-columns: 0.1fr 0.1fr 0.1fr ;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
     padding-top: 10px;
     padding-bottom: 10px;
     grid-gap: 20px;
-    
+
 }
 
 
-.staffform-input{
+.staffform-input {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
+
 }
 
-.staffaddbutton{
-    padding:10px;
+.staffaddbutton {
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #0000;
     background-color: #f5f5f5;
@@ -273,142 +283,152 @@ li a:hover:not(.active) {
     cursor: pointer;
 }
 
-.dish-input{
-    height:40px;
-    font-size:1rem;
+.dish-input {
+    height: 40px;
+    font-size: 1rem;
 }
 
-#dish-input{
-    height:40px;
-    font-size:1rem;
+#dish-input {
+    height: 40px;
+    font-size: 1rem;
 }
 
-#name{
-    padding:10px;
-    
+#name {
+    padding: 10px;
+
 }
 
-#price{
-    padding:10px;
+#price {
+    padding: 10px;
     width: 130px;
 }
 
-#type{
-    padding:10px;
+#type {
+    padding: 10px;
     text-transform: lowercase;
 }
 
-#special{
-    padding:10px;
+#special {
+    padding: 10px;
     text-transform: lowercase;
 }
 
-#description{
+#description {
     width: 280px;
     height: 250px;
-    resize: none; 
+    resize: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#ingredients{
+#ingredients {
     width: 250px;
     height: 250px;
-    resize: none; 
+    resize: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#allergy{
+#allergy {
     width: 150px;
     height: 250px;
-    resize: none; 
+    resize: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .star {
-    visibility:hidden;
-    font-size:30px;
-    cursor:pointer;
+    visibility: hidden;
+    font-size: 30px;
+    cursor: pointer;
 }
+
 .star:before {
-   content: "\2606";
-   position: absolute;
-   visibility:visible;
+    content: "\2606";
+    position: absolute;
+    visibility: visible;
 }
+
 .star:checked:before {
-   content: "\2605";
-   position: absolute;
+    content: "\2605";
+    position: absolute;
 }
+
 /*--------------------- staff landing -----------------------------*/
 
-#search{
-    font-size:1rem;
+#search {
+    font-size: 1rem;
 }
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
+}
 
-  th {
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  td {
+}
+
+td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}
 
-  #plusbutton{
-      color:black;
-  }
+#plusbutton {
+    color: black;
+}
 
-  #dishInput{
+#dishInput {
     height: 46px;
     border-radius: 48px;
     border: 0.5px solid lightgrey;
     width: 30%;
-    padding-left:35px;
+    padding-left: 35px;
     font-size: 1rem;
-    
-  }
- #search{
+
+}
+
+#search {
     position: absolute;
     left: 10px;
     top: calc(50% - 0.5em);
- }
-
- .searchbar {
-    position: relative;
-  }
-
-  /*--------------------- contact us -----------------------------*/
-  #phonenumber{
-      color:black;
-      text-decoration:none;
-  }
-  
-  .tel{
-      display: flex;
-      justify-content: center;
-      align-content: center;
-  }
-.textbox2{
-    position:absolute; 
-    left:100%;
 }
-  .text2 {
+
+.searchbar {
+    position: relative;
+}
+
+/*--------------------- contact us -----------------------------*/
+#phonenumber {
+    color: black;
+    text-decoration: none;
+}
+
+.tel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.textbox2 {
+    position: absolute;
+    left: 100%;
+}
+
+.text2 {
     float: left;
     position: relative;
-    width:400px;
+    width: 400px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.map{
+
+.map {
     position: absolute;
-  top: 150%;
-  left:-160%;
+    top: 150%;
+    left: -160%;
 }
