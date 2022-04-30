@@ -402,7 +402,11 @@ tr:nth-child(even) {
 .searchbar {
     position: relative;
 }
-
+.btn-delete{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 /*--------------------- contact us -----------------------------*/
 #phonenumber {
     color: black;
