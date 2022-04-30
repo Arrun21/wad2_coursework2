@@ -27,14 +27,17 @@
 <br>
 <table id ="dishTable">
 {{#entries}}
+<form action="/staffhome/{{ _id }}/remove" method="POST">
 <tr>
 <th>{{name}}</th>
 <td>{{description}}</td>
 <td>{{type}}</td>
-<td><i class="fa-solid fa-trash-can"></i></td>
+<td><input type="submit" value="Delete" /></td>
 </tr>
+</form>
 {{/entries}}
 </table>
+
 
 
 <script src="./javascript/searchbar.js"></script>

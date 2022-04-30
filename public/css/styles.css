@@ -310,7 +310,7 @@ li a:hover:not(.active) {
 
 #special {
     padding: 10px;
-    text-transform: lowercase;
+    transform: scale(1.5);
 }
 
 #description {
@@ -364,19 +364,19 @@ table {
 }
 
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid #dcdcdc;
     text-align: left;
     padding: 8px;
 }
 
 td {
-    border: 1px solid #dddddd;
+    border: 1px solid #dcdcdc;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #d4dcdc;
 }
 
 #plusbutton {

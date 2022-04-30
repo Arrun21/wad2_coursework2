@@ -346,7 +346,9 @@ class Restaurant {
         })
     }
 
-
+    remove(query, options, cb) {
+        this.db.remove(query, options, cb);
+      }
 
 
 

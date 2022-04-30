@@ -140,3 +140,11 @@ exports.logout = function (req, res) {
     res.clearCookie("jsontoken").status(200).redirect("/");
 };
 
+exports.removeDish = function (req, res) {
+    restaurantDAO.remove({ _id: req.params.id }, {}, (err, numRemoved) => {if (err) {
+        console.log(err);
+      }
+      
+      res.redirect('/staffhome');})
+
+  };
