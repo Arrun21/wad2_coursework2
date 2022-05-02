@@ -30,34 +30,34 @@ class StaffDAO {
                 return this;
             });
         });
-}
-create(staffemail, password) {
-    const that = this;
-    bcrypt.hash(password, saltRounds).then(function (hash) {
-        var entry = {
-            email: staffemail,
-            password: hash,
-        };
-        that.db.insert(entry, function (err) {
+    }
+    create(staffemail, password) {
+        const that = this;
+        bcrypt.hash(password, saltRounds).then(function (hash) {
+            var entry = {
+                email: staffemail,
+                password: hash,
+            };
+            that.db.insert(entry, function (err) {
+                if (err) {
+                    console.log("Can't insert email: ", staffemail);
+                }
+            });
+        });
+    }
+    lookup(email, cb) {
+        this.db.find({ 'email': email }, function (err, entries) {
             if (err) {
-                console.log("Can't insert email: ", staffemail);
+                return cb(err, null)
+            } else {
+                if (entries.length == 0) {
+                    return cb(null, null);
+                }
+                console.log(entries[0])
+                return cb(null, entries[0]);
             }
         });
-    });
-}
-lookup(email, cb) {
-    this.db.find({ 'email': email }, function (err, entries) {
-        if (err) {
-            return cb(err, null)
-        } else {
-            if (entries.length == 0) {
-                return cb(null, null);
-            }
-            console.log(entries[0])
-            return cb(null, entries[0]);
-        }
-    });
-}
+    }
 }
 const dao = new StaffDAO('./db/staff.db');
 //dao.init();

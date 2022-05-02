@@ -21,7 +21,7 @@ exports.login = function (req, res, next) {
             if (err) {
                 console.log(err);
                 return res.render("staff/login");
-              }
+            }
             if (result) {
                 //variable store to store information about the staff such as staffemail.
                 let store = { staffemail: staff.email };
@@ -30,7 +30,7 @@ exports.login = function (req, res, next) {
                 res.cookie("jsontoken", accessToken);
                 next();
             } else {
-                return res.render("staff/login"); 
+                return res.render("staff/login");
             }
         });
     });
@@ -41,7 +41,7 @@ exports.authenticate = function (req, res, next) {
     if (!accessToken) {
         return res.status(403).send();
     }
-    
+
     try {
         jsontoken.verify(accessToken, process.env.ACCESS_TOKEN_SECRET);
         next();

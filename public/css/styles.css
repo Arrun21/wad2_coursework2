@@ -148,9 +148,11 @@ li a:hover:not(.active) {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-.btn-register:hover{
+
+.btn-register:hover {
     background-color: #acb4ac;
 }
+
 /*--------------------- login -----------------------------*/
 .formlogin {
     display: grid;
@@ -208,7 +210,8 @@ li a:hover:not(.active) {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-.loginbutton:hover{
+
+.loginbutton:hover {
     background-color: #acb4ac;
 }
 
@@ -282,9 +285,11 @@ li a:hover:not(.active) {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-.staffaddbutton:hover{
+
+.staffaddbutton:hover {
     background-color: #acb4ac;
 }
+
 .dish-input {
     height: 40px;
     font-size: 1rem;
@@ -408,21 +413,24 @@ tr:nth-child(even) {
 .searchbar {
     position: relative;
 }
-.btn-delete{
+
+.btn-delete {
     border: none;
     background: none;
     cursor: pointer;
 }
+
 /*--------------------- contact us -----------------------------*/
-#phonenumberbutton{
+#phonenumberbutton {
     border-radius: 5px;
-    padding:8px 8px;
+    padding: 8px 8px;
     background-color: #eddebf;
 }
 
-#phonenumberbutton:hover{
+#phonenumberbutton:hover {
     background-color: #acb4ac;
 }
+
 #phonenumber {
     color: black;
     text-decoration: none;
@@ -451,6 +459,7 @@ tr:nth-child(even) {
     top: 130%;
     left: -160%;
 }
+
 .textboxcontact {
     float: left;
     position: relative;
@@ -464,6 +473,7 @@ tr:nth-child(even) {
     left: -50%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*--------------------- staff edit -----------------------------*/
 .formstaffupdate {
     display: grid;
@@ -503,31 +513,36 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 
-.staffupdatebutton:hover{
+.staffupdatebutton:hover {
     background-color: #acb4ac;
 }
 
 /*--------------------- media queries -----------------------------*/
-@media screen  and (max-device-width: 480px) {
-    h1{
+@media screen and (max-device-width: 480px) {
+    h1 {
         font-size: 100px;
-        margin-top:20%;
+        margin-top: 20%;
     }
-    #aboutbody{
-      width:50%;
+
+    #aboutbody {
+        width: 50%;
     }
-    #abouth1{
-        position:absolute;
-        left:25%;
+
+    #abouth1 {
+        position: absolute;
+        left: 25%;
     }
-    .textbox{
-        position:absolute;
-        top:20%;
-        max-width:70%;
+
+    .textbox {
+        position: absolute;
+        top: 20%;
+        max-width: 70%;
     }
-    .text{
-        font-size:3em;
+
+    .text {
+        font-size: 3em;
     }
+
     .pic {
         position: absolute;
         left: 10%;
@@ -535,15 +550,16 @@ tr:nth-child(even) {
         transform: scale(2, 2);
     }
 
-    .picmenu{
+    .picmenu {
         position: absolute;
         left: 10%;
         top: 2%;
         transform: scale(2, 2);
     }
+
     .navbar {
-        margin-top:18%;
-        margin-right:25%;
+        margin-top: 18%;
+        margin-right: 25%;
     }
 
     ul {
@@ -552,131 +568,143 @@ tr:nth-child(even) {
 
     .menuDiv {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         font-family: Arial, Helvetica, sans-serif;
-         overflow-y: scroll;
-  
-    }
-    
-    #contactbody{
-        width:50%;
-      }
-      #contacth1{
-        position:absolute;
-        left:25%;
-      }
+        overflow-y: scroll;
 
-      .textboxcontact{
-        position:absolute;
-        top:20%;
-        max-width:70%;
-      }
-
-      .textcontact{
-        font-size:3em;
     }
 
-    .textbox2{
-        position:absolute;
-        top:100%;
-        left:-50%;
-        
+    #contactbody {
+        width: 50%;
     }
 
-    .text2{
-        font-size:3em;
+    #contacth1 {
+        position: absolute;
+        left: 25%;
     }
 
-    #phonenumberbutton{
+    .textboxcontact {
+        position: absolute;
+        top: 20%;
+        max-width: 70%;
+    }
+
+    .textcontact {
+        font-size: 3em;
+    }
+
+    .textbox2 {
+        position: absolute;
+        top: 100%;
+        left: -50%;
+
+    }
+
+    .text2 {
+        font-size: 3em;
+    }
+
+    #phonenumberbutton {
         transform: scale(2, 2);
     }
 
-    .map{
-        position:absolute;
-        top:270%;
-        left:-68%;
+    .map {
+        position: absolute;
+        top: 270%;
+        left: -68%;
         transform: scale(1.2, 2);
     }
 
-    #loginnav{
+    #loginnav {
         position: relative;
-        right:85%;
+        right: 85%;
     }
 
-    #loginh1{
-        position:absolute;
-        top:4%;
-        left:34%;
+    #loginh1 {
+        position: absolute;
+        top: 4%;
+        left: 34%;
     }
 
-    #loginBox{
-        position:absolute;
-        top:35%;
-        left:28%;
+    #loginBox {
+        position: absolute;
+        top: 35%;
+        left: 28%;
         transform: scale(2.4, 2.4);
     }
-    #registerh1{
-        position:absolute;
-        top:4%;
-        left:29%;
-    }
-    #registernav{
-        position: relative;
-        right:85%;
-    }
-   
-    #registerBox{
-        position:absolute;
-        top:35%;
-        left:23.8%;
-        transform: scale(2, 2);
-    }
-    #staffhomeh1{
-        position:relative;
-        top:4%;
-        
-    }
-    #staffhomenav{
-        position:relative;
-        top:4%;
-        right:45%;
-    }
-    .searchbar{
-        position:relative;
-        left:65%;
-        transform: scale(2, 2);
-        width:80%;
-    }
-    #dishTable{
-        font-size:1.2em;
-    }
-    #staffhometh{
-        font-size:1.2em;
-    }
-    
-    #staffaddh1{
-        position:relative;
-        top:2.5%;
+
+    #registerh1 {
+        position: absolute;
+        top: 4%;
+        left: 29%;
     }
 
-    #staffaddnav{
-        position:relative;
-        top:4%;
-        right:45%;
+    #registernav {
+        position: relative;
+        right: 85%;
     }
-   #staffaddBox{
-    transform: scale(1.2, 1.2);
-   }
-   #updateh1{
-    position:relative;
-    top:2.5%;
-   }
-   #updatenav{
-    position:relative;
-    top:4%;
-    right:45%;
-   }
-   #staffupdateBox{
-    transform: scale(1.2, 1.2);
-   }
-  }
+
+    #registerBox {
+        position: absolute;
+        top: 35%;
+        left: 23.8%;
+        transform: scale(2, 2);
+    }
+
+    #staffhomeh1 {
+        position: relative;
+        top: 4%;
+
+    }
+
+    #staffhomenav {
+        position: relative;
+        top: 4%;
+        right: 45%;
+    }
+
+    .searchbar {
+        position: relative;
+        left: 65%;
+        transform: scale(2, 2);
+        width: 80%;
+    }
+
+    #dishTable {
+        font-size: 1.2em;
+    }
+
+    #staffhometh {
+        font-size: 1.2em;
+    }
+
+    #staffaddh1 {
+        position: relative;
+        top: 2.5%;
+    }
+
+    #staffaddnav {
+        position: relative;
+        top: 4%;
+        right: 45%;
+    }
+
+    #staffaddBox {
+        transform: scale(1.2, 1.2);
+    }
+
+    #updateh1 {
+        position: relative;
+        top: 2.5%;
+    }
+
+    #updatenav {
+        position: relative;
+        top: 4%;
+        right: 45%;
+    }
+
+    #staffupdateBox {
+        transform: scale(1.2, 1.2);
+    }
+}
