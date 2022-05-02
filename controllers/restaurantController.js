@@ -87,7 +87,7 @@ exports.post_new_staff = function (req, res) {
 
     if (password !== password2) {
         return res.redirect('/login')
-      }
+    }
     if (!email || !password) {
         res.send(401, "no email or no password");
         return;
@@ -109,7 +109,7 @@ exports.new_dish = function (req, res) {
     res.render('staff/staffadd', {
         title: 'Staff',
         loggedIn: true,
-        })
+    })
 }
 
 exports.post_new_dish = function (req, res) {
@@ -125,66 +125,73 @@ exports.post_new_dish = function (req, res) {
 
 exports.staff_homepage = function (req, res) {
     restaurantDAO.getAllEntries()
-      .then((list) => {
-        res.render('staff/staffhome', {
-          title: "Staff",
-          loggedIn: true,
-          entries: list,
+        .then((list) => {
+            res.render('staff/staffhome', {
+                title: "Staff",
+                loggedIn: true,
+                entries: list,
+            });
+        })
+        .catch((err) => {
+            console.log("promise rejected", err);
         });
-      })
-      .catch((err) => {
-        console.log("promise rejected", err);
-      });
-  };
+};
 
 exports.logout = function (req, res) {
     res.clearCookie("jsontoken").status(200).redirect("/");
 };
 
 exports.removeDish = function (req, res) {
-    restaurantDAO.remove({ _id: req.params.id }, {}, (err, numRemoved) => {if (err) {
-        console.log(err);
-      }
-      
-      res.redirect('/staffhome');})
+    restaurantDAO.remove({ _id: req.params.id }, {}, (err, numRemoved) => {
+        if (err) {
+            console.log(err);
+        }
 
-  };
+        res.redirect('/staffhome');
+    })
 
-exports.updateDish = function(req,res){
-    const dish = restaurantDAO.lookup({ _id: req.params.id });
+};
 
-
-    res.render('staff/staffedit', {
-        title: 'Staff Update',
-        dish:dish,
-        loggedIn: true,
-        
+exports.updateDish = function (req, res) {
+    restaurantDAO.lookup({ _id: req.params.id }, function (err, dish) {
+        console.log(dish)
+        if (err) {
+            console.log(err);
+        }
+        res.render('staff/staffedit', {
+            title: 'Staff Update',
+            loggedIn: true,
+            dish: dish,
         })
+    });
 }
 
 
-exports.post_updateDish = function(req,res){
-    restaurantDAO.update({ _id: req.params.id  }, { $set: {
-        name: req.body.name,
-        price:req.body.price,
-        type:req.body.type,
-        special: req.body.special === 'on' ? true : false,
-        hidden: req.body.hidden === 'on' ? true : false,
-        description: req.body.description,
-        ingredients:req.body.ingredients,
-        allergy:req.body.allergy,
+exports.post_updateDish = function (req, res) {
+    restaurantDAO.update({ _id: req.params.id }, {
+        $set: {
+            name: req.body.name,
+            price: req.body.price,
+            type: req.body.type,
+            special: req.body.special === 'on' ? true : false,
+            hidden: req.body.hidden === 'on' ? true : false,
+            description: req.body.description,
+            ingredients: req.body.ingredients,
+            allergy: req.body.allergy,
 
-      } },
-      {},
-      function(err) {if (err) {
-        console.log(err);
-      }
-      restaurantDAO.load()
-      console.log('Dish is updated:', req.params.id);
-      res.redirect('/staffhome');
-    }
+        }
+    },
+        {},
+        function (err) {
+            if (err) {
+                console.log(err);
+            }
+            restaurantDAO.load()
+            console.log('Dish is updated:', req.params.id);
+            res.redirect('/staffhome');
+        }
     );
-    
 
-    
+
+
 };

@@ -20,9 +20,9 @@
 <br>
 <div class ="formstaffupdate">
 <div class ="staffupdate">
-    <form method="post" role="form" id="staffupdateBox">
+    <form method="post" role="form" id="staffupdateBox" action="/staffedit/{{ dish._id }}/edit">
      <div class="staffform-input">
-            <input class="star" type="checkbox" id="dish-input" id="hidden" name="hidden" value="{{ dish.hidden }}"  >
+            <input class="star" type="checkbox" id="dish-input" id="hidden" name="hidden" {{ #dish.hidden }} checked {{ /dish.hidden }} >
         </div>
     <div class="dishDiv">
         <div class="staffform-input">
@@ -42,23 +42,26 @@
         </div>
         <div class="staffform-input">
             <label id="staffupdatelabel" for="special">Special</label>
-            <input type="checkbox" class="dish-input" id="special" name="special" value="{{ dish.special }}"  >
+            <input type="checkbox" class="dish-input" id="special" name="special" {{ #dish.special }} checked {{ /dish.special }} >
         </div>
         </div>
         <div class="contentDiv">
             <div class="staffform-input">
             <label id="staffupdatelabel" for="description">Description</label>
-            <textarea class="dish-input" id="description" name="description" value="{{ dish.description }}"  placeholder="Enter description here."    required>
+            <textarea class="dish-input" id="description" name="description"  placeholder="Enter description here."    required>
+            {{ dish.description }}
             </textarea>
             </div>
             <div class="staffform-input">
             <label id="staffupdatelabel" for="ingredients">Ingredients</label>
-            <textarea class="dish-input" id="ingredients" name="ingredients" value="{{ dish.ingredients }}" placeholder="Enter ingredients here."     required>
+            <textarea class="dish-input" id="ingredients" name="ingredients" {{ dish.ingredients }} placeholder="Enter ingredients here."     required>
+            {{ dish.ingredients }}
             </textarea>
             </div>
             <div class="staffform-input">
             <label  id="staffupdatelabel" for="allergy">Allergy</label>
-            <textarea class="dish-input" id="allergy" name="allergy" value="{{ dish.allergy }}"  placeholder="Enter allergy"    required>
+            <textarea class="dish-input" id="allergy" name="allergy" {{ dish.allergy }}  placeholder="Enter allergy"    required>
+            {{ dish.allergy }}
             </textarea>
             </div>
         </div>

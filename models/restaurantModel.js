@@ -348,21 +348,21 @@ class Restaurant {
 
     remove(query, options, cb) {
         this.db.remove(query, options, cb);
-      }
+    }
 
-      load() {
+    load() {
         this.db.loadDatabase();
-      }
+    }
 
-      lookup(query) {
-        this.db.find(query, function(err, entries) {
-          if(err){
-            console.log(err);
-          }
-          return entries[0];
-        });
-      }
-   
+    lookup(query, cb) {
+        this.db.findOne(query, cb);
+    }
+
+
+    update(query, changes, opt, cb) {
+        this.db.update(query, changes, opt, cb);
+    }
+
 }
 
 
