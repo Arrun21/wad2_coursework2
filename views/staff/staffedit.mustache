@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body class="container">
+<h1>Update Dish</h1>
+<div class="picmenu">
+     <a href="/">   <img src="img/logo1.JPG" alt="UmaiNihon" width="160" height="90"></a>
+</div>
+<div class="navbar">
+        <ul>
+        {{#loggedIn}}
+        <li><a href="staffhome">Home</a></li>
+            <li><a href="register">Register</a></li>
+            <li><a href="logout">Log Out</a></li>
+            {{/loggedIn}}
+          </ul>
+        </div>
+<br>
+<br>
+<div class ="formstaffupdate">
+<div class ="staffupdate">
+    <form method="post" role="form" id="staffupdateBox">
+     <div class="staffform-input">
+            <input class="star" type="checkbox" id="dish-input" id="hidden" name="hidden" value="{{ dish.hidden }}"  >
+        </div>
+    <div class="dishDiv">
+        <div class="staffform-input">
+            <label  id="staffupdatelabel" for="name">Update dish</label>
+            <input type="text" class="dish-input" id="name" name="name" value="{{ dish.name }}" placeholder="Update dish" required>
+        
+        </div>
+        <div class="staffform-input">
+            <label id="staffupdatelabel" for="price">Price</label>
+            <input type="text" class="dish-input" id="price" name="price" value="{{ dish.price }}"  placeholder="Enter price" required>
+        </div>
+        </div>
+        <div class="dishDiv2">
+        <div class="staffform-input">
+            <label  id="staffupdatelabel" for="type">Type</label>
+            <input type="text" class="dish-input" id="type" name="type" value="{{ dish.type }}"  placeholder="Enter type" required>
+        </div>
+        <div class="staffform-input">
+            <label id="staffupdatelabel" for="special">Special</label>
+            <input type="checkbox" class="dish-input" id="special" name="special" value="{{ dish.special }}"  >
+        </div>
+        </div>
+        <div class="contentDiv">
+            <div class="staffform-input">
+            <label id="staffupdatelabel" for="description">Description</label>
+            <textarea class="dish-input" id="description" name="description" value="{{ dish.description }}"  placeholder="Enter description here."    required>
+            </textarea>
+            </div>
+            <div class="staffform-input">
+            <label id="staffupdatelabel" for="ingredients">Ingredients</label>
+            <textarea class="dish-input" id="ingredients" name="ingredients" value="{{ dish.ingredients }}" placeholder="Enter ingredients here."     required>
+            </textarea>
+            </div>
+            <div class="staffform-input">
+            <label  id="staffupdatelabel" for="allergy">Allergy</label>
+            <textarea class="dish-input" id="allergy" name="allergy" value="{{ dish.allergy }}"  placeholder="Enter allergy"    required>
+            </textarea>
+            </div>
+        </div>
+        <br>
+        
+            <input type="submit" value="Update dish" class="staffupdatebutton">
+        
+        </div>
+        </div>
+    </form>
+</body>
+</html>

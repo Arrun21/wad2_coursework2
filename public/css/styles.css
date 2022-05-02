@@ -436,3 +436,42 @@ tr:nth-child(even) {
     top: 130%;
     left: -160%;
 }
+
+/*--------------------- staff edit -----------------------------*/
+.formstaffupdate {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.staffupdate {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+#staffupdatelabel {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#staffupdateBox {
+    padding: 2.5em;
+    margin: 1em;
+    border: 0.1em solid #0000;
+    border-radius: 0.2em;
+    background-color: #d5d4cb;
+    text-align: left;
+    justify-content: left;
+    float: left;
+}
+
+
+.staffupdatebutton {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0000;
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}

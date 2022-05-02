@@ -16,6 +16,8 @@ router.get('/staffadd', authenticate,controller.new_dish);
 router.post('/staffadd', authenticate, controller.post_new_dish);
 router.get("/staffhome", authenticate, controller.staff_homepage);
 router.post('/staffhome/:id/remove',controller.removeDish);
+router.get('/staffedit', authenticate,controller.updateDish);
+router.post('/staffhome/:id/edit', authenticate,controller.post_updateDish);
 router.get("/logout", controller.logout);
 router.get("/contact", controller.contact_page);
 

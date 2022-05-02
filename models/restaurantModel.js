@@ -350,10 +350,18 @@ class Restaurant {
         this.db.remove(query, options, cb);
       }
 
+      load() {
+        this.db.loadDatabase();
+      }
 
-
-
-
+      lookup(query) {
+        this.db.find(query, function(err, entries) {
+          if(err){
+            console.log(err);
+          }
+          return entries[0];
+        });
+      }
    
 }
 

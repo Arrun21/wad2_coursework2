@@ -1,3 +1,4 @@
+const { type } = require('express/lib/response');
 const restaurantDAO = require('../models/restaurantModel');
 const staffDao = require("../models/staffModel.js");
 
@@ -148,3 +149,42 @@ exports.removeDish = function (req, res) {
       res.redirect('/staffhome');})
 
   };
+
+exports.updateDish = function(req,res){
+    const dish = restaurantDAO.lookup({ _id: req.params.id });
+
+
+    res.render('staff/staffedit', {
+        title: 'Staff Update',
+        dish:dish,
+        loggedIn: true,
+        
+        })
+}
+
+
+exports.post_updateDish = function(req,res){
+    restaurantDAO.update({ _id: req.params.id  }, { $set: {
+        name: req.body.name,
+        price:req.body.price,
+        type:req.body.type,
+        special: req.body.special === 'on' ? true : false,
+        hidden: req.body.hidden === 'on' ? true : false,
+        description: req.body.description,
+        ingredients:req.body.ingredients,
+        allergy:req.body.allergy,
+
+      } },
+      {},
+      function(err) {if (err) {
+        console.log(err);
+      }
+      restaurantDAO.load()
+      console.log('Dish is updated:', req.params.id);
+      res.redirect('/staffhome');
+    }
+    );
+    
+
+    
+};
