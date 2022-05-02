@@ -20,11 +20,6 @@ h1 {
     left: 50%;
 }
 
-/*.textbox {
-    display:flex;
-    justify-content: center;
-    justify-content: center;
-}*/
 
 .text {
     float: left;
@@ -153,7 +148,9 @@ li a:hover:not(.active) {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-
+.btn-register:hover{
+    background-color: #acb4ac;
+}
 /*--------------------- login -----------------------------*/
 .formlogin {
     display: grid;
@@ -210,6 +207,9 @@ li a:hover:not(.active) {
     background-color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+}
+.loginbutton:hover{
+    background-color: #acb4ac;
 }
 
 /*--------------------- staff add -----------------------------*/
@@ -282,7 +282,9 @@ li a:hover:not(.active) {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-
+.staffaddbutton:hover{
+    background-color: #acb4ac;
+}
 .dish-input {
     height: 40px;
     font-size: 1rem;
@@ -412,6 +414,15 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 /*--------------------- contact us -----------------------------*/
+#phonenumberbutton{
+    border-radius: 5px;
+    padding:8px 8px;
+    background-color: #eddebf;
+}
+
+#phonenumberbutton:hover{
+    background-color: #acb4ac;
+}
 #phonenumber {
     color: black;
     text-decoration: none;
@@ -478,4 +489,8 @@ tr:nth-child(even) {
     background-color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+}
+
+.staffupdatebutton:hover{
+    background-color: #acb4ac;
 }
