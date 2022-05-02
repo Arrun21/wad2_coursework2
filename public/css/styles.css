@@ -383,6 +383,10 @@ tr:nth-child(even) {
     color: black;
 }
 
+#editbutton {
+    color: black;
+}
+
 #dishInput {
     height: 46px;
     border-radius: 48px;
