@@ -14,6 +14,28 @@ node index
 5.Now can view the website in the browser by following this url:<br>
 http://localhost:3000
 
+<h1>List of features that have been implemented</h1>
+<h3>About Us</h3>
+<p>Displays information about the restaurant with navbar that allows users to navigate to different pages</p>
+<h3>Lunch Menu</h3>
+<p>Displays all the relevant information for each dish in the lunch menu in a grid format</p>
+<h3>Main Menu</h3>
+<p>Displays all the relevant dish name,description,ingredients,allergy and price in a grid format</p>
+<h3>Contact Us</h3>
+<p>Displays information that allows users to contact the restaurant and opening times, as well as a interactive map that provides the location of the restaurant</p>
+<h3>Register</h3>
+<p>Allows staff to create new users that will then be authorised to access the staff function</p>
+<h3>Log In</h3>
+<p>Allows staff to log in to their account that grants them staff authorisation</p>
+<h3>Staff Home</h3>
+<p>Displays all the dishes in a table format with edit and delete buttons next to each dish,a search bar is also provided to allow staff to easily search for a specific dish this makes the process of editing and deleting dishes much faster for the staff.This page also provides a add button next to the search bar that allows staff to add new dishes.Nav bar that allows staff to return to staffhome,create new user or logout</p>
+<h3>Staff Add</h3>
+<p>Allows staff to enter new details for a dish that is going to be added into the either the lunch or main menu</p>
+<h3>Staff Edit</h3>
+<p>Allows staff to edit a specific dish and update the changes</p>
+<h3>Delete</h3>
+<p>Allows staff to remove a specific dish from the staffhome and the menu pages</p>
+
 <h1>Justification for any changes from development plan</h1>
 
 Decided to remove welcome page as the specification does not specify it is needed changed landing page to about us page<br>
