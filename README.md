@@ -16,7 +16,10 @@ node index
 6.Now can view the website in the browser by following this url:<br>
 http://localhost:3000
 <br>
-7.Log In details:<br>
+7.To access staff functions user must enter this into the url:<br>
+http://localhost:3000/login
+<br>
+8.Log In details:<br>
 Email:admin@gmail.com<br>
 Password:12345678
 
