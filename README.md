@@ -18,6 +18,7 @@ http://localhost:3000
 <br>
 Justification for any changes from your development plans
 <br>
+<br>
 Decided to remove an welcome page as the specification does not specify it is needed changed landing page to about us page<br>
 Removed menu page as it is easier for the easier to choose lunch menu or main menu from nav bar this is more efficient<br>
 Changed format for lunch and main menu page to make it more similar to how restaurants have their dishes placed on a menu<br>
