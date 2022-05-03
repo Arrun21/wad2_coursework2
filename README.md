@@ -8,12 +8,17 @@ or download the zip file
 <br>
 3.Add the following to the .env file <br>
 ACCESS_TOKEN_SECRET=Stringforuseforcw2passwordforstaffusers
-<br>   
-4.Run the applicaton by typing the following:<br>
+<br>
+4.Type 'npm install' in the terminal   
+5.Run the applicaton by typing the following:<br>
 node index
 <br>
-5.Now can view the website in the browser by following this url:<br>
+6.Now can view the website in the browser by following this url:<br>
 http://localhost:3000
+7.Log In details:<br>
+Email:admin@gmail.com<br>
+Password:12345678
+
 
 <h1>List of features that have been implemented</h1>
 <h3>About Us</h3>
@@ -51,3 +56,5 @@ Changed the function of the star , now by clicking on the star it makes the dish
 Removed the cancel button as I did not see the need for a cancel button<br>
 Changed the layout of mobile views according to the changes I made for desktop view
 
+<h1>Link to a live version of my site</h1>
+https://guarded-ocean-98266.herokuapp.com/
