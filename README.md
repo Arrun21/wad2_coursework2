@@ -14,6 +14,7 @@ node index
 5.Now can view the website in the browser by following this url:<br>
 http://localhost:3000
 <br>
+<br>
 <h1>Justification for any changes from development plan</h1>
 
 Decided to remove welcome page as the specification does not specify it is needed changed landing page to about us page<br>
