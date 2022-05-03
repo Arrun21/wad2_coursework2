@@ -30,11 +30,11 @@ http://localhost:3000
 <h3>Staff Home</h3>
 <p>Displays all the dishes in a table format with edit and delete buttons next to each dish,a search bar is also provided to allow staff to easily search for a specific dish this makes the process of editing and deleting dishes much faster for the staff.This page also provides a add button next to the search bar that allows staff to add new dishes.Nav bar that allows staff to return to staffhome,create new user or logout</p>
 <h3>Staff Add</h3>
-<p>Allows staff to enter new details for a dish that is going to be added into the either the lunch or main menu</p>
+<p>Allows staff to enter new details for a dish that is going to be added into either the lunch or main menu</p>
 <h3>Staff Edit</h3>
 <p>Allows staff to edit a specific dish and update the changes</p>
 <h3>Delete</h3>
-<p>Allows staff to remove a specific dish from the staffhome and the menu pages</p>
+<p>Allows staff to remove a specific dish from the application</p>
 
 <h1>Justification for any changes from development plan</h1>
 
