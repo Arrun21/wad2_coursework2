@@ -1,4 +1,4 @@
-<h1>Installation</h1>
+<h1>Instructions on how to run the site</h1>
 1.Clone the repository
 <br>
 git clone https://github.com/Arrun21/wad2_coursework2.git    
@@ -20,8 +20,8 @@ http://localhost:3000
 http://localhost:3000/login
 <br>
 8.Log In details:<br>
-Email:admin@gmail.com<br>
-Password:12345678
+Email: admin@gmail.com<br>
+Password: 12345678
 
 
 <h1>List of features that have been implemented</h1>
