@@ -35,6 +35,8 @@ http://localhost:3000
 <p>Allows staff to edit a specific dish and update the changes</p>
 <h3>Delete</h3>
 <p>Allows staff to remove a specific dish from the application</p>
+<h3>Logout</h3>
+<p>Logs out the current staff from the application ,the user would not have authorisation to access staff functions now</p>
 
 <h1>Justification for any changes from development plan</h1>
 
