@@ -7,7 +7,8 @@ or download the zip file
 2.Create the .env file 
 <br>
 3.Add the following to the .env file <br>
-ACCESS_TOKEN_SECRET=Stringforuseforcw2passwordforstaffusers   
+ACCESS_TOKEN_SECRET=Stringforuseforcw2passwordforstaffusers
+<br>   
 4.Run the applicaton by typing the following:<br>
 node index
 <br>
