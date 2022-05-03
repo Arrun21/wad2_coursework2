@@ -10,8 +10,9 @@ or download the zip file
 3.Add the following to the .env file <br>
 ACCESS_TOKEN_SECRET=Stringforuseforcw2passwordforstaffusers   
 <br>
-4.Run the applicaton by typing the following:<br>
+4.Run the applicaton by typing the following:
 node index
+<br>
 5.Now can view the website in the browser by following this url:<br>
 http://localhost:3000
 <br>
