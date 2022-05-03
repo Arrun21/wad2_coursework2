@@ -1,5 +1,5 @@
 <h1>Installation</h1>
-1.Clone the repository
+<h2>1.Clone the repository</h2>
 <br>
 git clone https://github.com/Arrun21/wad2_coursework2.git    
 or download the zip file
