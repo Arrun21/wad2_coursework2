@@ -10,7 +10,7 @@ or download the zip file
 ACCESS_TOKEN_SECRET=Stringforuseforcw2passwordforstaffusers
 <br>
 4.Type 'npm install' in the terminal <br>  
-5.Run the applicaton by typing the following:<br>
+5.Run the applicaton by typing the following in the terminal:<br>
 node index
 <br>
 6.Now the user can view the website in the browser by following this url:<br>
