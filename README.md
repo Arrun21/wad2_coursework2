@@ -13,7 +13,7 @@ ACCESS_TOKEN_SECRET=Stringforuseforcw2passwordforstaffusers
 5.Run the applicaton by typing the following:<br>
 node index
 <br>
-6.Now can view the website in the browser by following this url:<br>
+6.Now the user can view the website in the browser by following this url:<br>
 http://localhost:3000
 <br>
 7.To access staff functions user must enter this into the url:<br>
